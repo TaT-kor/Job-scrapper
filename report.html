@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3cdd0fcab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <i class="fas fa-ethernet"></i>
+        <a href="index.html">PL Scrapper</a>
+    </nav>
+    <h1 align="center">Search Result</h1>
+    <h3 align="center">Found 'number' result for: 'language'</h3>
+    <button>
+        <a href="#">Export to CSV</a>
+    </button>
+    <section>
+        <h4>Title</h4>
+        <h4>Company</h4>
+        <h4>Location</h4>
+        <h4>Link</h4>
+    </section>
+</body>
+</html>
+
+    <!-- 
+    <h3>Found {{resultsNumber}} result for: {{searchingBy}}</h3>
+    <!-- <a href="/export?word={{searchingBy}}">Export to CSV</a>
+    <section>
+        {% for job in jobs %} <!-- flask의 html에서 for ~ in ~문을 쓰도록 해주는 기능 -->
+            <!-- <span>{{job.title}}</span>
+            <span>{{job.company}}</span>
+            <span>{{job.location}}</span>
+            <a href="{{job.apply_link}}" target="_blank">Apply</a>
+        {% endfor %} <!-- 깔끔하게 table처럼 보이는 이유 : style에서 그리드를 설정해줬기 때문 -->
+    <!-- </section> -->
+<!-- </body> -->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <!-- flask css 적용 코드
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+    -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3cdd0fcab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <i class="fas fa-ethernet"></i>
+        <a href="index.html">PL Scrapper</a>
+    </nav>
+    
+    <h1>Job Scrapper</h1>
+    <form>
+        <input type="checkbox" name="site" value="Indeed" checked>Indeed
+        <input type="checkbox" name="site" value="SO" checked >Stack Overflow
+        <p>
+            <input placeholder="Search for a job" required="word" />
+            <button type="button" onclick="location.href='report.html'">Search</button> <!-- report.html을 확인하기 위해 type, onclick 추가-->
+        </p>
+    </form>
+</body>
+</html>
